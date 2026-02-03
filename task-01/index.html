@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book | Delicious Dishes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <h1>Flavor Fusion</h1>
+            </div>
+            <p class="tagline">Discover & Create Delicious Recipes</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Recipe Grid -->
+            <div class="recipe-grid">
+                <!-- Recipe 1: Aloo Matar -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe1" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://i.ytimg.com/vi/JPm9CooPUd4/maxresdefault.jpg">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 30 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Aloo Matar Ki Sabji</h3>
+                            <p class="recipe-category">Indian Vegetarian</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Spicy</span>
+                                <span class="tag">North Indian</span>
+                            </div>
+                            <label for="recipe1" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Aloo Matar Ki Sabji</h3>
+                                <label for="recipe1" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>3 medium potatoes, cubed</li>
+                                        <li>1 cup green peas</li>
+                                        <li>2 tomatoes, pureed</li>
+                                        <li>1 onion, finely chopped</li>
+                                        <li>1 tsp ginger-garlic paste</li>
+                                        <li>1 tsp cumin seeds</li>
+                                        <li>1/2 tsp turmeric powder</li>
+                                        <li>1 tsp red chili powder</li>
+                                        <li>1 tsp garam masala</li>
+                                        <li>2 tbsp oil</li>
+                                        <li>Salt to taste</li>
+                                        <li>Fresh coriander for garnish</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Heat oil in a pan, add cumin seeds and let them crackle.</li>
+                                        <li>Add chopped onions and sauté until golden brown.</li>
+                                        <li>Add ginger-garlic paste and cook for 1 minute.</li>
+                                        <li>Add tomato puree and cook until oil separates.</li>
+                                        <li>Add all dry spices and mix well.</li>
+                                        <li>Add cubed potatoes and peas, mix to coat with masala.</li>
+                                        <li>Add 1 cup water, cover and cook for 15-20 minutes.</li>
+                                        <li>Garnish with fresh coriander and serve hot with roti.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Biryani -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe2" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://static.vecteezy.com/system/resources/previews/040/703/949/non_2x/ai-generated-royal-feast-master-the-art-of-chicken-biryani-at-home-generative-ai-photo.jpg">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 60 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Chicken Biryani</h3>
+                            <p class="recipe-category">Indian Non-Vegetarian</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Non-Veg</span>
+                                <span class="tag">Spicy</span>
+                                <span class="tag">Rice Dish</span>
+                            </div>
+                            <label for="recipe2" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Chicken Biryani</h3>
+                                <label for="recipe2" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>500g chicken, cut into pieces</li>
+                                        <li>2 cups basmati rice</li>
+                                        <li>2 onions, sliced</li>
+                                        <li>1 cup yogurt</li>
+                                        <li>2 tbsp biryani masala</li>
+                                        <li>1 tsp turmeric powder</li>
+                                        <li>1 tsp red chili powder</li>
+                                        <li>4 cups water</li>
+                                        <li>2 tbsp ghee</li>
+                                        <li>Saffron strands</li>
+                                        <li>Mint and coriander leaves</li>
+                                        <li>Fried onions for garnish</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Marinate chicken with yogurt and spices for 1 hour.</li>
+                                        <li>Soak rice for 30 minutes, then boil until 70% cooked.</li>
+                                        <li>In a heavy-bottomed pan, layer marinated chicken.</li>
+                                        <li>Add a layer of partially cooked rice over the chicken.</li>
+                                        <li>Sprinkle saffron milk, fried onions, mint, and coriander.</li>
+                                        <li>Seal the pan with dough or aluminum foil.</li>
+                                        <li>Cook on low heat for 20-25 minutes (dum cooking).</li>
+                                        <li>Let it rest for 10 minutes before serving.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Pizza -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe3" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 45 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Margherita Pizza</h3>
+                            <p class="recipe-category">Italian</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Italian</span>
+                                <span class="tag">Baked</span>
+                            </div>
+                            <label for="recipe3" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Margherita Pizza</h3>
+                                <label for="recipe3" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>2 cups all-purpose flour</li>
+                                        <li>1 tsp instant yeast</li>
+                                        <li>1 tsp sugar</li>
+                                        <li>1 tsp salt</li>
+                                        <li>3/4 cup warm water</li>
+                                        <li>2 tbsp olive oil</li>
+                                        <li>1/2 cup pizza sauce</li>
+                                        <li>200g fresh mozzarella cheese</li>
+                                        <li>Fresh basil leaves</li>
+                                        <li>1 tomato, sliced</li>
+                                        <li>Oregano for seasoning</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Mix flour, yeast, sugar, and salt in a bowl.</li>
+                                        <li>Add warm water and olive oil, knead into smooth dough.</li>
+                                        <li>Cover and let it rise for 1-2 hours until doubled.</li>
+                                        <li>Preheat oven to 250°C (480°F).</li>
+                                        <li>Roll dough into pizza base, spread pizza sauce.</li>
+                                        <li>Add sliced mozzarella and tomato slices.</li>
+                                        <li>Bake for 10-12 minutes until crust is golden.</li>
+                                        <li>Garnish with fresh basil and oregano before serving.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Paneer Butter Masala -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe4" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Paneer">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 35 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Paneer Butter Masala</h3>
+                            <p class="recipe-category">Indian Vegetarian</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Creamy</span>
+                                <span class="tag">Restaurant Style</span>
+                            </div>
+                            <label for="recipe4" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Paneer Butter Masala</h3>
+                                <label for="recipe4" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>250g paneer, cubed</li>
+                                        <li>2 onions, chopped</li>
+                                        <li>3 tomatoes, pureed</li>
+                                        <li>10-12 cashews, soaked</li>
+                                        <li>2 tbsp butter</li>
+                                        <li>1 tbsp oil</li>
+                                        <li>1 tsp ginger-garlic paste</li>
+                                        <li>1 tsp garam masala</li>
+                                        <li>1 tsp kasuri methi</li>
+                                        <li>1/2 cup cream</li>
+                                        <li>1 tsp sugar</li>
+                                        <li>Salt to taste</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Heat butter and oil, sauté onions until golden.</li>
+                                        <li>Add ginger-garlic paste, cook for 1 minute.</li>
+                                        <li>Add tomato puree and cook until oil separates.</li>
+                                        <li>Grind soaked cashews into a smooth paste.</li>
+                                        <li>Add cashew paste to the gravy, cook for 5 minutes.</li>
+                                        <li>Add all spices, salt, and sugar.</li>
+                                        <li>Add paneer cubes and cream, simmer for 5 minutes.</li>
+                                        <li>Crush kasuri methi and sprinkle on top before serving.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Ice Cream -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe5" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1127&q=80" alt="Ice Cream">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 6 hrs + 20 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Vanilla Ice Cream</h3>
+                            <p class="recipe-category">Dessert</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Dessert</span>
+                                <span class="tag">No-cook</span>
+                                <span class="tag">Chilled</span>
+                            </div>
+                            <label for="recipe5" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Vanilla Ice Cream</h3>
+                                <label for="recipe5" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>2 cups heavy cream</li>
+                                        <li>1 cup whole milk</li>
+                                        <li>3/4 cup sugar</li>
+                                        <li>1 tbsp vanilla extract</li>
+                                        <li>Pinch of salt</li>
+                                        <li>4 egg yolks (optional for custard base)</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>In a bowl, mix milk, sugar, and salt until sugar dissolves.</li>
+                                        <li>Add heavy cream and vanilla extract, whisk well.</li>
+                                        <li>For richer ice cream: whisk egg yolks with sugar until pale.</li>
+                                        <li>Heat milk until steaming, slowly pour over yolks while whisking.</li>
+                                        <li>Return mixture to heat, cook until it coats the back of a spoon.</li>
+                                        <li>Chill mixture completely (at least 4 hours or overnight).</li>
+                                        <li>Pour into ice cream maker and churn according to instructions.</li>
+                                        <li>Transfer to container, freeze for 4-6 hours until firm.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Noodles -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe6" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://myfoodstory.com/wp-content/uploads/2021/02/Vegetable-Hakka-Noodles-Restaurant-Style-3.jpg">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 20 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Vegetable Hakka Noodles</h3>
+                            <p class="recipe-category">Chinese</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Quick</span>
+                                <span class="tag">Stir-fry</span>
+                            </div>
+                            <label for="recipe6" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Vegetable Hakka Noodles</h3>
+                                <label for="recipe6" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>200g hakka noodles</li>
+                                        <li>1 carrot, julienned</li>
+                                        <li>1 capsicum, sliced</li>
+                                        <li>1 cup cabbage, shredded</li>
+                                        <li>2 spring onions, chopped</li>
+                                        <li>3 garlic cloves, minced</li>
+                                        <li>2 tbsp soy sauce</li>
+                                        <li>1 tbsp vinegar</li>
+                                        <li>1 tbsp chili sauce</li>
+                                        <li>1 tsp sugar</li>
+                                        <li>2 tbsp oil</li>
+                                        <li>Salt and pepper to taste</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Boil noodles according to package instructions, drain and set aside.</li>
+                                        <li>Heat oil in a wok, add minced garlic and sauté for 30 seconds.</li>
+                                        <li>Add carrots and stir-fry for 2 minutes on high heat.</li>
+                                        <li>Add capsicum and cabbage, stir-fry for another 2 minutes.</li>
+                                        <li>Add soy sauce, vinegar, chili sauce, sugar, salt and pepper.</li>
+                                        <li>Add boiled noodles and toss everything together.</li>
+                                        <li>Cook for 2-3 minutes until everything is well combined.</li>
+                                        <li>Garnish with spring onions and serve hot.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Pasta -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe7" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1152&q=80" alt="Pasta">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 25 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Creamy Alfredo Pasta</h3>
+                            <p class="recipe-category">Italian</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Creamy</span>
+                                <span class="tag">Comfort Food</span>
+                            </div>
+                            <label for="recipe7" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Creamy Alfredo Pasta</h3>
+                                <label for="recipe7" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>200g fettuccine pasta</li>
+                                        <li>1 cup heavy cream</li>
+                                        <li>1/2 cup grated Parmesan cheese</li>
+                                        <li>3 cloves garlic, minced</li>
+                                        <li>4 tbsp butter</li>
+                                        <li>Salt and black pepper to taste</li>
+                                        <li>1/4 tsp nutmeg powder</li>
+                                        <li>Fresh parsley, chopped</li>
+                                        <li>Additional Parmesan for serving</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Cook pasta according to package instructions until al dente.</li>
+                                        <li>In a large pan, melt butter over medium heat.</li>
+                                        <li>Add minced garlic and sauté for 1 minute until fragrant.</li>
+                                        <li>Pour in heavy cream and bring to a gentle simmer.</li>
+                                        <li>Add grated Parmesan cheese, stir until melted and smooth.</li>
+                                        <li>Season with salt, pepper, and nutmeg powder.</li>
+                                        <li>Add cooked pasta to the sauce, toss to coat evenly.</li>
+                                        <li>Garnish with fresh parsley and extra Parmesan before serving.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Cake -->
+                <div class="recipe-card">
+                    <input type="checkbox" id="recipe8" class="recipe-toggle">
+                    <div class="recipe-front">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Cake">
+                            <div class="recipe-time">
+                                <i class="far fa-clock"></i> 60 mins
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Vanilla Sponge Cake</h3>
+                            <p class="recipe-category">Dessert</p>
+                            <div class="recipe-tags">
+                                <span class="tag">Baking</span>
+                                <span class="tag">Dessert</span>
+                                <span class="tag">Celebration</span>
+                            </div>
+                            <label for="recipe8" class="view-recipe-btn">
+                                View Recipe <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="recipe-back">
+                        <div class="recipe-details">
+                            <div class="recipe-header">
+                                <h3>Vanilla Sponge Cake</h3>
+                                <label for="recipe8" class="close-btn">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div class="recipe-content">
+                                <div class="ingredients">
+                                    <h4><i class="fas fa-shopping-basket"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>1 1/2 cups all-purpose flour</li>
+                                        <li>1 cup sugar</li>
+                                        <li>1/2 cup unsalted butter, softened</li>
+                                        <li>2 eggs</li>
+                                        <li>1 cup milk</li>
+                                        <li>2 tsp baking powder</li>
+                                        <li>1 tsp vanilla extract</li>
+                                        <li>1/4 tsp salt</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4><i class="fas fa-list-ol"></i> Instructions</h4>
+                                    <ol>
+                                        <li>Preheat oven to 180°C (350°F). Grease and flour a cake pan.</li>
+                                        <li>Cream butter and sugar together until light and fluffy.</li>
+                                        <li>Add eggs one at a time, beating well after each addition.</li>
+                                        <li>Mix in vanilla extract.</li>
+                                        <li>In a separate bowl, whisk together flour, baking powder, and salt.</li>
+                                        <li>Alternately add flour mixture and milk to butter mixture, beginning and ending with flour.</li>
+                                        <li>Pour batter into prepared pan and smooth the top.</li>
+                                        <li>Bake for 30-35 minutes or until a toothpick inserted comes out clean.</li>
+                                        <li>Cool in pan for 10 minutes, then transfer to wire rack to cool completely.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-utensils"></i> Flavor Fusion</h4>
+                    <p>Your go-to recipe book for delicious homemade meals. Cook with love!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#indian">Indian Recipes</a>
+                    <a href="#italian">Italian Recipes</a>
+                    <a href="#dessert">Desserts</a>
+                    <a href="#snacks">Snacks</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> hello@flavorfusion.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flavor Fusion Recipe Book. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color:#e74c3c"></i> by Suhana</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

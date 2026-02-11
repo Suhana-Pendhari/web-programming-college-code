@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #45B7D1);
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .welcome-section {
+            padding: 50px 20px;
+            animation: fadeInUp 2s ease-out;
+        }
+        .welcome-text {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: bounceIn 1.5s ease-out 0.5s both;
+        }
+        .homepage-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            animation: zoomIn 2s ease-out 1s both;
+        }
+        .recipes-section {
+            padding: 40px 20px;
+        }
+        .recipe-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .recipe-button {
+            background-color: #FF8C00;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            display: inline-block;
+        }
+        .recipe-button:hover {
+            background-color: #FF4500;
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-section">
+        <h1 class="welcome-text">Welcome to My Recipe Book! 🍳</h1>
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Delicious Food Collage" class="homepage-image">
+        <p>Explore a collection of mouth-watering recipes from around the world. Click on a recipe below to get started!</p>
+    </div>
+    
+    <div class="recipes-section">
+        <div class="recipe-buttons">
+            <a href="./cake.html" class="recipe-button">Chocolate Cake 🍰</a>
+            <a href="./dosa.html" class="recipe-button">Dosa 🥞</a>
+            <a href="./manchurian.html" class="recipe-button">Vegetable Manchurian 🥦</a>
+            <a href="./iceCream.html" class="recipe-button">Ice Cream 🍨</a>
+            <a href="./aaloo.html" class="recipe-button">Aaloo Matar 🥔</a>
+        </div>
+    </div>
+</body>
+</html>

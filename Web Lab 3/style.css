@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: "custom";
+    src: url("font/font.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "arebic";
+    src: url("font/jummah.ttf") format("TrueType");
+}
+
+.my-heading{
+    font-family: "custom";
+    font-size: 100px;
+    text-align: center;
+    color: rgb(89, 99, 240);
+}
+
+.login-container{
+    width: 30%;
+    border: gray 2px solid;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    gap: 40px;
+}
+
+.login-text{
+    font-family: "arebic";
+    text-align: center;
+    font-size: 50px;
+    color: rgb(27, 27, 95);
+}

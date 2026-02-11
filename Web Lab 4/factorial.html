@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Factorial Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4">Factorial Calculator</h3>
+                        <div class="mb-3">
+                            <label for="numberInput" class="form-label">Enter a number</label>
+                            <input type="text" id="numberInput" class="form-control"
+                                placeholder="Enter a positive number">
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary" onclick="calculateFactorial()">Calculate Factorial</button>
+                        </div>
+                        <div class="mt-4">
+                            <h5 id="result" class="text-success text-center"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateFactorial() {
+            let num = document.getElementById("numberInput").value;
+            let resultElement = document.getElementById("result");
+
+            num = parseInt(num);
+            let factorial = 1;
+
+            for (let i = 1; i <= num; i++) {
+                factorial *= i;
+            }
+            resultElement.innerHTML = "Factorial of " + num + " is " + factorial;
+        }
+    </script>
+
+</body>
+
+</html>
